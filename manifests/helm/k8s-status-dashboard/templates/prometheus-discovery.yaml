@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: prometheus-{{ .Values.namespace }}-{{ template "fullname" . }}
+  name: prometheus-{{ template "fullname" . }}
   namespace: {{ .Values.namespace }}
   labels:
-    app: prometheus-{{ .Values.namespace }}-{{ template "fullname" . }}
+    app: prometheus-{{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
     release: "{{ .Release.Name }}"
     heritage: "{{ .Release.Service }}"
