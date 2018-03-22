@@ -6,7 +6,7 @@ config:
   auth0CallbackUrl:
   
 image:
-  pullSecret: k8s-status-dashboard 
+  pullSecret: k8s-status-platform1 
 dockerImage: 
 dockerTag: 
 dockerPort: 
@@ -23,7 +23,7 @@ replicasMax: 10
 cpuTargetPercentage: 50
 
 ingress:
-  name: 'k8s-status-dashboard'
+  name: 'k8s-status-platform1'
   subdomain: apps
 
   # Mark ssl as true to enable SSL on this service

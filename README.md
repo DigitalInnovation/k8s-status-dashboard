@@ -22,9 +22,10 @@ K8s-Status-Dashboard can run on a Kubernetes cluster. This is useful and effecti
     To run K8s-Status-Dashboard on a Kubernetes cluster using helm:
 
     ```
-    $ git clone https://github.com/sociallocket/k8s-status-dashboard.git
-    $ docker pull sociallocket/k8s-status-dashboard:latest
-    $ cd k8s-status-dashboard
+    $ git clone https://github.com/DigitalInnovation/k8s-status-dashboard.git
+    $ cd k8s-status-dashboard/app
+    $ docker build -t <owner/repository>:<version> .
+    $ docker push <owner/repository>:<version>
     $ populate <name>, <base64-encoded-crt>, <base64-encoded-key>, <auth0-client-id> and <auth0-secret> in manifests/secrets.template.yaml
     $ kubectl create -f manifests/secrets.template.yaml --namespace=k8s-dashboard-green
     ```
@@ -36,7 +37,7 @@ K8s-Status-Dashboard can run on a Kubernetes cluster. This is useful and effecti
 -   `host`: `<host-name>`
 
 - `image`:
-- `dockerImage`: `<repository>/<dockerImage-name>`
+- `dockerImage`: `<owner/repository>`
 - `dockerTag`: `<version>`
 - `dockerPort`: `<port>`
 
@@ -51,7 +52,7 @@ K8s-Status-Dashboard can run locally.
     To run K8s-Status-Dashboard locally:
 
     ```
-    $ git clone https://github.com/sociallocket/k8s-status-dashboard.git 
+    $ git clone https://github.com/DigitalInnovation/k8s-status-dashboard.git 
     $ cd k8s-status-dashboard/app/src/public       
     $ npm i
     $ cd k8s-status-dashboard/app
@@ -69,7 +70,7 @@ K8s-Status-Dashboard can be run using docker.
     To run K8s-Status-Dashboard using docker:
 
     ```
-    $ git clone https://github.com/sociallocket/k8s-status-dashboard.git 
+    $ git clone https://github.com/DigitalInnovation/k8s-status-dashboard.git 
     $ git checkout docker-k8s-status-dashboard
     $ cd k8s-status-dashboard  
     ```
@@ -99,20 +100,8 @@ initialization by passing `-e VAR=VALUE` to the Docker run command.
 |  `AUDIENCE`       | Port used to run k8s-status-dashboard. See [here](https://auth0.com/docs/client-auth/current/client-side-web) |
 |  `PORT`       | Port used to run k8s-status-dashboard  |
 
-## Issue Reporting
-
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program] is coming SOON.
-
-## Author
-
-Sociallocket
-
-## Contact
-
-[Contact Sociallocket](officialsociallocket@gmail.com)
-
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/sociallocket/k8s-status-dashboard/app/LICENSE.txt) file for more info.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/DigitalInnovation/k8s-status-dashboard/LICENSE.txt) file for more info.
 
 
