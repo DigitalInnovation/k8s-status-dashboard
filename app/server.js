@@ -24,5 +24,5 @@ const hostname = '0.0.0.0';  //process.env.HOST ||
 const port = 5000;
 
 const server = app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);  
+  console.log(`M&S Server running at http://${hostname}:${port}/`);  
 });

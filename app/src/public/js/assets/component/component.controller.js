@@ -31,8 +31,6 @@
           parseData.forEach(function(item) {
             var temp = item.conditions;
             temp.forEach(function (item) {
-              // console.log("item");
-              // console.log(item);
               result.push(item.type);
             });      
           });

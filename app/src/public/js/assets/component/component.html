@@ -11,9 +11,6 @@
 				<!--<td> {{componentlist.a}} </td>-->					
 			<tr ng-repeat="component in componentlist track by $index"> 
 				<td> {{component.metadata.name}} </td>
-				<!-- <td ng-for="component in componentlist track by $index">
-					<li> {{component.conditions[$index].type}} </li>
-				</td>				 -->
 				<td ng-for="statusComponent in statusComponentlist track by $index">
 						<li> {{statusComponentlist[$index]}} </li>
 				</td>
