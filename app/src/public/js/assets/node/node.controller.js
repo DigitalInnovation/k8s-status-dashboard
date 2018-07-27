@@ -25,7 +25,7 @@
           // console.log('nodes front-end got the data I requested');       
           // console.log(response.data)
           $scope.nodelist = response.data;
-          $scope.nodes = "";
+          $scope.nodes = "";           
       },function (error) {
         console.log('error')
       })
