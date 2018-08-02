@@ -20,7 +20,7 @@ K8s-Status-Dashboard is light weight and does not require a data-store but can b
 
 K8s-Status-Dashboard can run on a Kubernetes cluster. This is useful and effective when wanting to monitor more than one cluster.
 
-    To run K8s-Status-Dashboard on a Kubernetes cluster using helm:
+    To update configs for K8s-Status-Dashboard on a Kubernetes cluster using helm:
 
     ```
     $  bash migration-scripts/k8s_dashboard_migration_script.sh <vault-name> <environment-name> <namespace> 
